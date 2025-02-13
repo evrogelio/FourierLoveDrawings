@@ -4,7 +4,6 @@
 	import '../app.css';
 	import { cubicIn, expoOut, linear } from 'svelte/easing';
 	let { data }: LayoutProps = $props();
-
 	import { horizontalSlide } from '$lib/transitions';
 </script>
 
