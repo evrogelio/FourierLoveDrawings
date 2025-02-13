@@ -1,1 +1,26 @@
 @import 'tailwindcss';
+
+.borel {
+  font-family: "Borel", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zain {
+  font-family: "Zain", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.zain-light {
+  font-family: "Zain", serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.pink {
+  color: #fdcae6 ;
+}
+.dark-pink {
+  color: #430f39 ;
+}
