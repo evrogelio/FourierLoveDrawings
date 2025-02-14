@@ -90,7 +90,7 @@ export default function sketch(s: p5): void {
 </script>
 
 <div
-	class="grid grid-cols-1 lg:grid-cols-[33%_67%] grid-rows-[30%_70%] lg:grid-rows-1 w-full h-screen"
+	class="grid grid-cols-1 lg:grid-cols-[33%_67%] grid-rows-[30%_70%] lg:grid-rows-1 w-full h-full"
 >
 	<div class="flex w-full flex-col p-8 h-full">
 		<h1 class="text-4xl lg:text-6xl zain pink mb-4 lg:mb-8">What are the epicycles?</h1>

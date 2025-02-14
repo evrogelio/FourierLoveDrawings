@@ -19,8 +19,22 @@
 }
 
 .pink {
-  color: #fdcae6 ;
+  color: #ffb1d4;
 }
 .dark-pink {
   color: #430f39 ;
+}
+.logo {
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.logo.boolean {
+  -webkit-mask-image: url('https://storage.ucarolina.edu.mx/cdn/Boolean-Logo.svg');
+  mask-image: url('https://storage.ucarolina.edu.mx/cdn/Boolean-Logo.svg');
+}
+.logo.uca {
+  -webkit-mask-image: url('https://storage.ucarolina.edu.mx/cdn/LogoSmWhite.svg');
+  mask-image: url('https://storage.ucarolina.edu.mx/cdn/LogoSmWhite.svg');
 }
