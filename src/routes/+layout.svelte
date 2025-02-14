@@ -10,7 +10,7 @@
 			<slot></slot>
 		</div>
 		<footer class="flex justify-center items-center w-full pb-6">
-		  <div class="">
+		  <div class="h-full">
 			  <img src="https://storage.ucarolina.edu.mx/cdn/Boolean-LogoRosa.svg" class="h-full" />
       </div>
       <div class="h-4/5">
