@@ -1,7 +1,7 @@
 import { svgPathProperties } from "svg-path-properties";
 import type { Point } from "svg-path-properties/dist/types/types";
 
-export function convertPathToComplexCoordinates(path: string, resolution: number) {
+export function convertPathToComplexCoordinates(path: string, resolution: number, size: number = 500) {
   const points: { x: number, y: number }[] = [];
   const properties = new svgPathProperties(path);
   const totalLength = properties.getTotalLength();
@@ -10,7 +10,7 @@ export function convertPathToComplexCoordinates(path: string, resolution: number
     const distance = i * scale;
     points.push(properties.getPointAtLength(distance))
   }
-  return normalizePoints(points);
+  return normalizePoints(points, size);
 }
 
 function getBoundingBox(points: Point[]) {
