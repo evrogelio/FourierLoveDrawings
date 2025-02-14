@@ -28,8 +28,8 @@
 			>
 		</div>
 	</div>
-	<div class="h-1/2 lg:h-full lg:w-1/2 w-full" id="canvasParent" bind:this={canvasParent}></div>
-	<div class="zain flex w-full justify-center p-4 lg:hidden">
+	<div class="h-2/5 lg:h-full lg:w-1/2 w-full" id="canvasParent" bind:this={canvasParent}></div>
+	<div class="zain flex w-full justify-center pt-8 lg:hidden">
 		<a href="/epicycles"
 			><button
 				class="aspect-square w-16 items-center rounded-full bg-white text-center align-middle hover:bg-gray-100"

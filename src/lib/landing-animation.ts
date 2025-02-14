@@ -11,7 +11,7 @@ const { cos, sin, PI } = Math
 export default function sketch(s: p5): void {
   const isLandscape = window.innerWidth > window.innerHeight;
   const WIDTH: number = isLandscape ? window.innerWidth / 2 : window.innerWidth;
-  const HEIGHT: number = isLandscape ? window.innerHeight : window.innerHeight / 2;
+  const HEIGHT: number = isLandscape ? window.innerHeight : window.innerHeight * .4;
   const TAU: number = 2 * PI;
   const SKIP: number = 1;
   const PATH = HEART03_PATH;
@@ -28,7 +28,7 @@ export default function sketch(s: p5): void {
     fourier_result = transform();
   }
   function transform() {
-    const drawing = convertPathToComplexCoordinates(PATH, currentMaxPoints, Math.min(WIDTH, HEIGHT)*.9);
+    const drawing = convertPathToComplexCoordinates(PATH, currentMaxPoints, Math.min(WIDTH, HEIGHT) * .9);
     const vertex: ComplexNumber[] = []
     for (let i = 0; i < drawing.length; i += SKIP) {
       const number = new ComplexNumber(drawing[i].x, drawing[i].y)

@@ -9,7 +9,7 @@
 		<div class="h-full w-full">
 			<slot></slot>
 		</div>
-		<footer class="flex justify-center items-center w-full px-8 pb-6">
+		<footer class="flex justify-center items-center w-full pb-6">
 		  <div class="logo boolean h-full bg-[#ffb1d4]">
 			  <img src="https://storage.ucarolina.edu.mx/cdn/Boolean-Logo.svg" class="h-full opacity-0" />
       </div>
