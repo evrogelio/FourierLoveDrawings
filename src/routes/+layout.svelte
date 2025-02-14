@@ -11,10 +11,10 @@
 		</div>
 		<footer class="flex justify-center items-center w-full gap-6 pb-6">
 		  <div class="h-full">
-			  <img src="https://storage.ucarolina.edu.mx/cdn/Boolean-LogoRosa.svg" class="h-full" />
+			  <img src="https://storage.ucarolina.edu.mx/cdn/Boolean-LogoRosa.png" class="h-full" />
       </div>
       <div class="h-4/5">
-        <img src="https://storage.ucarolina.edu.mx/cdn/LogoSmRosa.svg" class="h-full" />
+        <img src="https://storage.ucarolina.edu.mx/cdn/LogoSmRosa.png" class="h-full" />
       </div>	
 		</footer>
 	</main>
