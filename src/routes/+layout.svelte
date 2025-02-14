@@ -5,7 +5,7 @@
 </script>
 
 {#key data.url}
-	<main class="h-screen w-screen overflow-hidden bg-[#ffefff] p-0 grid grid-rows-[90%_10%] lg:grid-rows-[90%_10%]">
+	<main class="h-dvh w-screen overflow-hidden bg-[#ffefff] p-0 grid grid-rows-[90%_10%] lg:grid-rows-[90%_10%]">
 		<div class="h-full w-full">
 			<slot></slot>
 		</div>
