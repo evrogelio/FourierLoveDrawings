@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { CodeBlock, type FocusBlock } from "svhighlight";
-  import 'highlight.js/styles/base16/dracula.css'
-  let code = `
+	import { CodeBlock, type FocusBlock } from 'svhighlight';
+	import 'highlight.js/styles/base16/dracula.css';
+	let code = `
     import type p5 from "p5";
 import { ComplexNumber, DFT, type DTFResult } from "./dft";
 import { convertPathToComplexCoordinates } from "./svgHelper";
@@ -78,31 +78,34 @@ export default function sketch(s: p5): void {
     }
   }
 } 
-  `
-  let step = 0;
-  let steps: FocusBlock[] = [
-    {lines: '', scrollLine: 1, text: "Unblur"},
-    {lines: '27', scrollLine: 1, text: "1: Convert SVG to complex coordinates"},
-    {lines: '29-32', scrollLine: 15, text: "2: Apply the descrete Fourier Transform"},
-    {lines: '36-51', scrollLine: 27, text: "3: Calculate the ending position of the point"},
-
-  ]
+  `;
+	let step = 0;
+	let steps: FocusBlock[] = [
+		{ lines: '', scrollLine: 1, text: 'Unblur' },
+		{ lines: '27-31', scrollLine: 25, text: '1: Convert SVG to complex coordinates' },
+		{ lines: '33', scrollLine: 25, text: '2: Apply the descrete Fourier Transform' },
+		{ lines: '36-51', scrollLine: 33, text: '3: Draw Epicycles and calculate the ending position of the point' },
+    { lines: '60-73', scrollLine: 60, text: '4: Add endpoint to path, and trace the path with color'}
+	];
 </script>
-<div class="flex items-center w-full h-full">
-	<div class="flex w-1/3 flex-col p-8 h-full">
-		<h1 class="text-6xl zain pink mb-8">What are the epicycles?</h1>
-		<p class="zain text-xl dark-pink">
+
+<div
+	class="grid grid-cols-1 lg:grid-cols-3 grid-rows-[30%_70%] lg:grid-rows-1 w-full h-screen"
+>
+	<div class="flex w-full flex-col p-8 h-full">
+		<h1 class="text-4xl lg:text-6xl zain pink mb-4 lg:mb-8">What are the epicycles?</h1>
+		<p class="zain text-xl dark-pink max-w-full">
 			Epicycles are circles moving on circles, a concept dating back to Ptolemy’s planetary models.
 		</p>
-		<p class="zain text-xl dark-pink">With enough of them, we can approximate any closed shape.</p> 
+		<p class="zain text-xl dark-pink">With enough of them, we can approximate any closed shape.</p>
 	</div>
-  <div class="w-2/3 h-full p-4 max-h-screen">
-    <CodeBlock 
-      {code} 
-      focusBlocks={steps}
-      showFocusButtons={true}
-      language="typescript"
-      dimensions="max-h-full"
-    />
-  </div>
+	<div class="h-full p-4">
+		<CodeBlock
+			{code}
+			focusBlocks={steps}
+			showFocusButtons={true}
+			language="typescript"
+			dimensions="h-full"
+		/>
+	</div>
 </div>
