@@ -9,11 +9,11 @@
 		<div class="h-full w-full">
 			<slot></slot>
 		</div>
-		<footer class="flex justify-center w-full px-8 pb-2">
+		<footer class="flex justify-center items-center w-full px-8 pb-6">
 		  <div class="logo boolean h-full bg-[#ffb1d4]">
 			  <img src="https://storage.ucarolina.edu.mx/cdn/Boolean-Logo.svg" class="h-full opacity-0" />
       </div>
-      <div class="logo uca h-full bg-[#ffb1d4]">
+      <div class="logo uca h-[80%] bg-[#ffb1d4]">
         <img src="https://storage.ucarolina.edu.mx/cdn/LogoSmColor.svg" class="h-full opacity-0" />
       </div>	
 		</footer>
